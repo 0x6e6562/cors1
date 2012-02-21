@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Hello World</title>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    $.ajax({
+      url: 'http://cors2.dev/blah',
+      data: {
+        hello: 'world'
+      },
+      type: 'POST',
+      success: function(data) {
+        console.info(data);
+      }
+    });
+  </script>
+</body>
+</html>
